@@ -21,7 +21,7 @@ export default function Stories() {
   }, [])
 
   return (
-    <div className='border border-gray-200 mt-8 p-6 flex space-x-2 bg-white   overflow-x-scroll rounded-sm scrollbar-none'>
+    <div className='border border-gray-200 mt-8 p-6 flex space-x-2 bg-white overflow-x-scroll rounded-sm scrollbar-none'>
       {storyUsers.map(user => (
         <Story key={user.id} username={user.username} imgSrc={user.img} />
       ))}
